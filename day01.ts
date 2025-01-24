@@ -35,7 +35,27 @@ if (numberA % 2 === 0){
 
 console.log(checkOddEven);
 
-//soal 2 (on progres)
+//soal 2
+const number: number = 7;
+let checkPrime: boolean = true;
+
+if (number < 2){
+  checkPrime = false;
+};
+
+for (let i = 2; i <= Math.sqrt(number); i++){
+  if(number % i === 0){
+    checkPrime = false;
+    break;
+  }
+}
+
+if(checkPrime){
+  console.log("Number is a Prime");
+}else {
+  console.log("Number is not a Prime")
+}
+
 
 //soal 3 
 let sum: number = 0;

@@ -52,7 +52,20 @@ let kapital =
 
 console.log(kapital);
 
-//soal 7 (On Progress)
+//soal 7
+let text: string = "tHE qUIcK bRoWn fOX";
+let result = "";
+
+for(let i = 0; i < text.length; i++){
+  if(text[i] === text[i].toUpperCase()){
+    result += text[i].toLowerCase();
+  }else {
+    result += text[i].toUpperCase();
+  }
+}
+
+console.log(result);
+
 
 //soal 8 
 let num1: number= 42;
@@ -67,7 +80,32 @@ if(num1 > num2){
 }
 
 
-//soal 9 (On Progress)
+//soal 9
+const numb1: number = 42;
+const numb2: number = 27;
+const numb3: number = 18;
+
+if (numb1 < numb2 && numb1 < numb3) {
+  if (numb2 < numb3) {
+    console.log(`${numb1}, ${numb2}, ${numb3}`);
+  } else {
+    console.log(`${numb1}, ${numb3}, ${numb2}`);
+  }
+} else if (numb2 < numb1 && numb2 < numb3) {
+  if (numb1 < numb3) {
+    console.log(`${numb2}, ${numb1}, ${numb3}`);
+  } else {
+    console.log(`${numb2}, ${numb3}, ${numb1}`);
+  }
+} else if (numb3 < numb1 && numb3 < numb2) {
+  if (numb1 < numb2) {
+    console.log(`${numb3}, ${numb1}, ${numb2}`);
+  } else {
+    console.log(`${numb3}, ${numb2}, ${numb1}`);
+  }
+}
+
+
 
 //soal 10
 let inputType = "hello";
