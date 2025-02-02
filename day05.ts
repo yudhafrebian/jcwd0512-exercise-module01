@@ -40,7 +40,7 @@ let numbers: number[] = [5, 3, 1, 7, 2, 6];
 
 function secondSmallest() {
   numbers.sort((a, b) => a - b);
-  return numbers.slice(1, 2);
+  return numbers[1];
 }
 
 console.log(secondSmallest());
