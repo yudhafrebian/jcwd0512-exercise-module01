@@ -25,7 +25,7 @@ console.log(sortArray());
 let arr: string[] = ["apple", "banana", "cherry", "date"];
 
 function concatenating() {
-  let firstWords = arr.slice(0, -1).join(", ");
+  let firstWords: string = arr.slice(0, -1).join(", ");
   let lastIndex = arr.at(-1);
 
   let result = `${firstWords} and ${lastIndex}`;
@@ -38,21 +38,21 @@ console.log(concatenating());
 
 let numbers: number[] = [5, 3, 1, 7, 2, 6];
 
-function secondSmallest() {
+function secondSmallest(numbers: number[]) {
   numbers.sort((a, b) => a - b);
   return numbers[1];
 }
 
-console.log(secondSmallest());
+console.log(secondSmallest(numbers));
 
 //soal 4
 
-let arr1: number[] = [1, 2, 3];
-let arr2: number[] = [3, 2, 1];
+let arr1: number[] = [1, 6, 5, 5];
+let arr2: number[] = [3, 1, 4, 6];
 
 function sumArray() {
   let result: number[] = [];
-  for (let i = 0; i < arr1.length && i < arr2.length; i++) {
+  for (let i: number = 0; i < arr1.length && i < arr2.length; i++) {
     result.push(arr1[i] + arr2[i]);
   }
   return result;
