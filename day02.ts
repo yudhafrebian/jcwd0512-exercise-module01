@@ -2,7 +2,7 @@
 //soal 1
 let number1: number = 9;
 
-for(let i = 1; i <= 10; i++){
+for(let i = 1; i <= 10; i+= 1){
   console.log(`${number1} x ${i}`)
 }
 
